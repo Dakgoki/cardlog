@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+  법인카드 사용대장 연결 페이지
+  아래 두 곳의 주소만 바꾸세요 (전체 바꾸기 사용 권장)
+   1) WEBAPP : https://script.google.com/macros/s/AKfycbyQwfCgwGX5xXiUTeL4Kl3yVaU_5a_3ryP0iB4iOBo99y0Wh80bwk9GtxQl6W2mBS4prQ/exec   ← Apps Script 정식 배포 주소 (/exec)
+   2) SITE   : https://dakgoki.github.io/cardlog/  (입력 완료)
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>법인카드 사용대장 · 주식회사 씨지오</title>
+<meta name="description" content="영수증을 찍으면 법인카드 사용내역이 바로 입력됩니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="법인카드 사용대장 · 주식회사 씨지오">
+<meta property="og:description" content="영수증을 찍으면 법인카드 사용내역이 바로 입력됩니다.">
+<meta property="og:url" content="https://dakgoki.github.io/cardlog/">
+<meta property="og:image" content="https://dakgoki.github.io/cardlog/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="og.png">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0a5cff;color:#fff;font-family:-apple-system,"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+h1{font-size:28px;margin:0 0 8px}
+p{margin:0 0 24px;opacity:.9}
+a{display:inline-block;background:#fff;color:#0a5cff;font-weight:700;text-decoration:none;padding:14px 28px;border-radius:12px;font-size:17px}
+</style>
+</head>
+<body>
+<div>
+  <h1>법인카드 사용대장</h1>
+  <p>잠시 후 자동으로 이동합니다…</p>
+  <a id="go" href="https://script.google.com/macros/s/웹앱ID/exec">바로 열기</a>
+</div>
+<script>
+  // 미리보기 수집기는 스크립트를 실행하지 않으므로 위 제목·이미지가 카드로 표시되고,
+  // 실제 사용자는 즉시 웹앱으로 이동합니다.
+  location.replace(document.getElementById('go').href);
+</script>
+</body>
+</html>
